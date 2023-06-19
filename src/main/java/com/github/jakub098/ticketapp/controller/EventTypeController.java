@@ -22,9 +22,9 @@ public class EventTypeController {
         this.repository = repository;
     }
 
-        @GetMapping("/event-types")
-        List<EventType> getAllTasks() {
-            logger.warn("Reading all tasks");
-            return repository.findAll();
-        }
+//        @GetMapping("/event-types")
+//        List<EventType> getAllTasks() {
+//            logger.warn("Reading all tasks");
+//            return repository.findAll();
+//        }
 }
