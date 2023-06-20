@@ -11,7 +11,6 @@ import java.util.List;
 @Service
 public class EventTypeImpl implements EventTypeService {
 
-    @Autowired
     private EventTypeRepository eventTypeRepository;
 
     @Override

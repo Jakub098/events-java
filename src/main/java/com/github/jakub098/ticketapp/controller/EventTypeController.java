@@ -18,7 +18,7 @@ public class EventTypeController {
 
     public EventTypeController() {}
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/event-types", method = RequestMethod.GET)
     public List<EventType> list() {
         return  eventTypeService.getEventTypes();
     }
