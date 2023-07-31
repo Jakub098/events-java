@@ -9,4 +9,5 @@ import java.util.List;
 public interface EventTypeService {
 
     List<EventType> list();
+    EventType getById(Integer eventTypeId);
 }

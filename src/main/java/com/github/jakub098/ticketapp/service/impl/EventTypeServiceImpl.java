@@ -5,6 +5,7 @@ import com.github.jakub098.ticketapp.repository.EventTypeRepository;
 import com.github.jakub098.ticketapp.service.EventTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -18,4 +19,10 @@ public class EventTypeServiceImpl implements EventTypeService {
     public List<EventType> list() {
         return eventTypeRepository.findAll();
     }
+
+    @Override
+    public EventType getById(Integer eventTypeId) {
+        return eventTypeRepository.getEventType(eventTypeId);
+    }
+
 }
