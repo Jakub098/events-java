@@ -24,7 +24,7 @@ public class EventTypeController {
     }
 
     @RequestMapping(value = "/event-type", method = RequestMethod.GET)
-    public EventType getById(@RequestParam(value = "eventTypeId") Integer eventTypeId) {
+    public EventType getById(@RequestParam Integer eventTypeId) {
         return eventTypeService.getById(eventTypeId);
     }
 }

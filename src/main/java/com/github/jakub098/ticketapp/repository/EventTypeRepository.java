@@ -22,7 +22,7 @@ public class EventTypeRepository {
     }
 
     public EventType getEventType(Integer eventTypeId) {
-        String jpql = "SELECT c FROM EventType c WHERE c.id = " + eventTypeId;
+        String jpql = "SELECT c FROM EventType c WHERE c.id = :eventTypeId";
         TypedQuery<EventType> query = entityManager.createQuery(jpql, EventType.class);
         query.setParameter("eventTypeId", eventTypeId);
 
