@@ -9,12 +9,13 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class EventTypeImpl implements EventTypeService {
+public class EventTypeServiceImpl implements EventTypeService {
 
+    @Autowired
     private EventTypeRepository eventTypeRepository;
 
     @Override
-    public List<EventType> getEventTypes() {
-        return eventTypeRepository.list();
+    public List<EventType> list() {
+        return eventTypeRepository.findAll();
     }
 }

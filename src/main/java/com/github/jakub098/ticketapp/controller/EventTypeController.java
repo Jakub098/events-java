@@ -16,10 +16,8 @@ public class EventTypeController {
     @Autowired
     private EventTypeService eventTypeService;
 
-    public EventTypeController() {}
-
     @RequestMapping(value = "/event-types", method = RequestMethod.GET)
     public List<EventType> list() {
-        return  eventTypeService.getEventTypes();
+        return  eventTypeService.list();
     }
 }
