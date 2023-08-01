@@ -28,4 +28,6 @@ public class PlaceAddress {
 
     @Column(name = "city", nullable = false)
     private String city;
+    
+
 }
